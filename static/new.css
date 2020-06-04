@@ -1,0 +1,209 @@
+*{
+    margin:0px;
+}
+
+body{
+ 
+    
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(144, 144, 143, 0.5)),
+                                     url("gecko.png");
+                    
+    
+
+
+}
+
+
+header{
+    
+    margin-top:0px;
+    height:60px;
+    padding:10px;
+    text-align: center;
+    background-color:darkblue;   
+}
+
+
+
+
+.alternatlogo{
+    margin-top:10px;
+    float:left;
+    margin-left: 270px;
+    font-weight:500;
+    font-size: 30px;
+    color:orange;
+}
+
+
+header nav {
+    
+    float:left;  
+    height:40px;
+    width: 800px;  
+    margin-left:50px;
+    
+    
+}
+
+ul{        
+    
+    height:50px;
+    width:700px;  
+    
+
+    
+}
+
+header nav li{
+    
+    height:40px;
+    display: inline;
+    font-size:15px;
+
+    text-align:center; 
+    margin-bottom: 12px;
+    padding: auto;
+    
+
+   
+}
+
+/*.main-ul-navleft {
+    border:solid green 1px;
+    float:left ;
+    height:30px;
+    margin-right:20px;
+    margin-top: 2px;
+    padding: auto 2px;
+    text-align:center;
+}
+
+
+.main-ul-navleft-logo{
+    border:solid green 1px;
+    
+    margin-right:50px
+    
+     font-weight:500;
+     font-size: 20px;
+     text-align:center;
+
+
+}
+
+*/
+
+.main-ul-navleft {
+
+     margin-top:20px;
+    float:left;
+    height:30px;
+    margin-right:20px;
+    text-align:center;
+}
+.main-ul-navright {
+
+     margin-top:20px;
+    float:right;
+    margin-right:20px;
+    height:30px;
+    text-align:center;
+}
+
+.active:hover{
+    color:yellow;
+}
+
+
+header nav  a  {
+    
+    
+    text-decoration: none;
+    color :rgb(255,69,0);
+
+
+}
+
+.clearfloataftaheader{
+    clear: left;
+} 
+
+
+
+.wrap{
+
+    border:solid green 2px;
+    width: 1000px; 
+    height:1500px;
+    margin:10px auto;
+    background-color:transparent;
+ /*this will be  the distance  of the top of the section to the .container wrapper */ 
+    padding:5px ;
+    }
+
+    .articlesdiv{
+
+        border:solid green 2px;
+
+        display: inline;
+        float:left;
+    }
+    
+    .firstdiv{
+    
+        width: 150px; 
+        
+        
+        margin:10px 90px 60px 60px;
+        background-color:transparent;
+     /*this will be  the distance  of the top of the section to the .container wrapper */ 
+        padding:5px ;
+        color:grey;
+    
+    }
+
+
+    .seconddiv{
+
+        width: 100px; 
+        
+        margin:10px 40px 60px 40px;
+        
+        background-color:whitesmoke;
+     /*this will be  the distance  of the top of the section to the .container wrapper */ 
+        padding:5px ;
+        color:grey;
+    
+    }
+
+
+
+    
+
+   
+    .clearfloataftasection{
+    clear: left;
+} 
+
+
+
+
+
+
+
+
+footer{
+
+    
+    width:400px;
+    margin:80px auto 15px auto;
+    padding-top:40px ;
+    color :rgb(255, 60, 0);
+    font-size: medium;
+    text-align: center;
+
+    
+   
+
+}

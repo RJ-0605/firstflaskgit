@@ -1,0 +1,17 @@
+
+
+
+/* this contains other important additional to basic flaskready.css file supporting the flask.html file */
+
+hr.solid {
+  border-top: 3px solid #bbb;
+  width:350px;
+  margin:5px auto 15px auto;
+}
+
+
+hr.dashed {
+  border-top: 3px dashed #bbb;
+  width:350px;
+  margin:5px auto 15px auto;
+}
