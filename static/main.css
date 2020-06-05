@@ -152,7 +152,7 @@ header nav  a  {
 
     border:solid green 2px;
     width: 1000px; 
-    height:1500px;
+    height:auto;
     margin:10px auto;
     background-color:transparent;
  /*this will be  the distance  of the top of the section to the .container wrapper */ 

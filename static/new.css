@@ -1,3 +1,6 @@
+/* this file is concerned with the main structure or the layout.html for index.html */
+
+
 *{
     margin:0px;
 }
@@ -6,7 +9,7 @@ body{
  
     
     background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(144, 144, 143, 0.5)),
-                                     url("gecko.png");
+                                     url("images/gecko.png");
                     
     
 
@@ -14,10 +17,12 @@ body{
 }
 
 
+
 header{
     
     margin-top:0px;
     height:60px;
+    
     padding:10px;
     text-align: center;
     background-color:darkblue;   
@@ -69,30 +74,7 @@ header nav li{
    
 }
 
-/*.main-ul-navleft {
-    border:solid green 1px;
-    float:left ;
-    height:30px;
-    margin-right:20px;
-    margin-top: 2px;
-    padding: auto 2px;
-    text-align:center;
-}
 
-
-.main-ul-navleft-logo{
-    border:solid green 1px;
-    
-    margin-right:50px
-    
-     font-weight:500;
-     font-size: 20px;
-     text-align:center;
-
-
-}
-
-*/
 
 .main-ul-navleft {
 
@@ -134,7 +116,7 @@ header nav  a  {
 .wrap{
 
     border:solid green 2px;
-    width: 1000px; 
+    width: 1150px; 
     height:1500px;
     margin:10px auto;
     background-color:transparent;
@@ -152,10 +134,10 @@ header nav  a  {
     
     .firstdiv{
     
-        width: 150px; 
+        width: 700px; 
         
         
-        margin:10px 90px 60px 60px;
+        margin:10px 30px 60px 25px;
         background-color:transparent;
      /*this will be  the distance  of the top of the section to the .container wrapper */ 
         padding:5px ;
@@ -163,12 +145,22 @@ header nav  a  {
     
     }
 
+    .firstmiddivspace{
+
+    margin-bottom:40px;
+    height:250px;
+    background-color:whitesmoke;
+}
+
+
+
 
     .seconddiv{
 
-        width: 100px; 
+        width: 300px; 
+        height:350px;
         
-        margin:10px 40px 60px 40px;
+        margin:10px 15px 60px 20px;
         
         background-color:whitesmoke;
      /*this will be  the distance  of the top of the section to the .container wrapper */ 
@@ -178,7 +170,24 @@ header nav  a  {
     }
 
 
+    .secondivlist{
 
+        list-style-type: none;
+        margin-top:10px;
+    
+    
+    
+    
+    }
+    
+    
+    .secondivlist >li{
+        border:solid grey 2px;
+        width:150px;
+        height:30px;
+        padding-left:15px;
+        padding-top:5px;
+    }
     
 
    

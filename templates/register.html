@@ -1,0 +1,94 @@
+
+{% extends "layout.html" %}
+{% block content %}
+
+ 
+ 	<div class="mainlogindiv">
+
+					<h1>Join Today </h1>
+	
+		<form method="POST" action=""  class=" ">
+			{{ form.hidden_tag() }}
+
+				
+                                        <fieldset>
+                                        <legend>Personalia:</legend>
+
+
+						{{form.firstname.label(class="")}}
+							<br/>
+						{{form.firstname(class=" ")}}
+
+						<br/><br/>
+
+
+
+
+						{{form.lastname.label(class="")}}
+							<br/>
+						{{form.lastname(class=" ")}}
+
+						<br/><br/>					
+
+						{{form.username.label(class="")}}
+							<br/>
+						{{form.username(class=" ")}}
+
+						<br/><br/>
+				
+
+
+						<!-- Note the class inside these are css elements classes being passed through for them --> 
+
+
+						<!--the labels represent the variable name used for those fields in the  forms.py file -->
+						{{form.email.label(class=" ")}}
+							<br/>
+						{{form.email(class=" ")}}
+
+						<br/><br/>
+
+
+
+					
+
+						{{form.password.label(class="")}}
+							<br/>
+						{{form.password(class=" ")}}
+
+					 	<br/><br/>
+
+
+					
+
+						{{form.confirm_password.label(class=" ")}}
+							<br/>
+						{{form.confirm_password(class="")}}
+
+						<br/><br/>
+					
+
+
+
+				</fieldset>
+
+				<br/><br/>
+
+				<div class="">
+					{{form.submit(class=" ")}}
+				</div>
+
+		    </form>
+	
+
+		     
+
+	    <!--the login for this -> {{url_for('login') }} calls the login function  -->
+		
+		<small class=" ">Already have an account? <a class=" " href="{{url_for('login') }}">Sign In</a>
+	                 </small>
+
+
+		</div>
+		   
+{% endblock content %}

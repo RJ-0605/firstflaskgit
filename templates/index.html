@@ -4,48 +4,27 @@
 
 					
 
-
-
-
-
-                  
-
+                        {% for post in post_variable %}
                      
-   <section>
+   
 
 
 
+                                                         <div class="firstmiddivspace">
+                                                                <a class="centeritem" href="#">{{ post.author }}</a>
+                                                                <small class="centeritem">{{ post.date_posted }}</small>
 
-                                                 <div class="articlesdiv firstdiv ">
+                                                            <hr class="solid">
+                                                            </hr>
+                                                
 
-                                                        <p>Integer gravida ex eu tempor lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut eu varius felis. Suspendisse a condimentum diam. Maecenas vehicula lobortis tortor id ultricies. Ut rutrum eu mi ut blandit. Vestibulum tellus nisl, tristique ut lacus eget, consequat aliquet risus. Morbi lobortis vel elit in suscipit. Fusce a interdum nunc, ac imperdiet mauris. Donec vestibulum, elit id ornare congue, dolor magna tristique ex, vitae pharetra quam mi nec nisi. Donec varius mauris ac maximus egestas. Phasellus maximus luctus sapien at mollis. Aliquam sed porttitor dolor, fermentum sodales mi.</p>
+                                                                <h2><a class="centeritem" href="#">{{ post.title }}</a></h2>
 
- 
-                                                 </div>
+                                                                <p class="centeritem">{{ post.content }}</p>
 
+                                                         </div>
 
-
-                                                 <div class="articlesdiv seconddiv  ">
-
-                                              
-                                                <p>Quisque egestas varius ligula in tristique. Nulla id lectus eu ipsum ultrices semper ut eget enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus blandit turpis eu turpis tempus vestibulum. Vestibulum eu dolor at felis vehicula placerat faucibus nec mi. Phasellus eget nibh est. Vestibulum eros mi, volutpat sed nisi ac, tristique interdum lectus. Etiam nisl ex, blandit vel eros nec, pretium facilisis ante. Vivamus at metus arcu. Nam pretium lorem vitae purus blandit, dapibus dapibus mi vehicula. Vivamus imperdiet sem sed dictum ullamcorper.</p>
-
-
-                                    </div>
-                        
-
-
-                        </section>
-
-                    
-
-        
-
-        
-                                    
-
-     
-                                            
-
-
+                                        
+                                {% endfor %}
+                                                 
 				{% endblock content %}

@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+        <title>Gecko Blog</title>
+
+        <link  type="text/css" rel="stylesheet" href="register_login.css" />
+		<link rel="stylesheet" href="{{url_for('static',filename='register_login.css')}}">
+        
+
+        </head>
+
+
+
+        <body>
+
+
+                <div class="extlogindiv">
+                
+                            <div class="mainlogindiv">
+
+                                    <h1>Join Today </h1>
+
+                                        <form action="/action_page.php">
+                                        <fieldset>
+                                        <legend>Personalia:</legend>
+                                        <label for="fname">First name</label>
+                                            <br/>
+                                        <input type="text" id="fname" name="fname"><br><br>
+
+
+                                        <label for="lname">Last name</label>
+                                            <br/>
+                                        <input type="text" id="lname" name="lname"><br><br>
+
+
+                                        <!--date of birth should be put here -->
+
+
+                                        <label for="usrname">Username</label>
+                                            <br/>
+                                        <input type="text" id="usrname" name="username"><br><br>
+
+
+                                        <label for="email">Email</label>
+                                            <br/>
+                                        <input type="email" id="email" name="email"><br><br>
+
+
+                                        <label for="paswd">Password</label>
+                                            <br/>
+                                        <input type="Password" id="paswd" name="password"><br><br>
+
+
+
+                                        <label for="confirm_paswd">Confirm Password</label>
+                                            <br/>
+                                        <input type="Confirm_Password" id="confirm_paswd" name="confirm_password"><br><br>
+
+
+                                        <input type="submit" value="Submit">
+
+                                        </fieldset>
+                                        </form>
+
+                                    <p> Already a member , <a href="login_register.html" >Sign In </p>
+                             </div>
+                </div>
+
+        </body>
+
+
+
+
+        </html>

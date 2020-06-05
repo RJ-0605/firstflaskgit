@@ -8,6 +8,7 @@
 
 
 		<link rel="stylesheet" href="{{url_for('static',filename='new.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename='new2.css')}}">
 		
 		
      
@@ -54,10 +55,35 @@
 
 
             <div class="wrap">    
-            
+
+                <section>
+
+                    <div class="articlesdiv firstdiv ">
 
                         {% block content %}{% endblock %}
-            
+
+                     </div>
+
+
+                     <div class="articlesdiv seconddiv  ">
+
+                                              
+                                              <h3>Our Sidebar</h3>
+                                              <br/>
+                <p class=' '>You can put any information here you'd like.
+                  <ul class=" secondivlist">
+                    <li class=" ">Latest Posts</li>
+                    <li class=" ">Announcements</li>
+                    <li class=" ">Calendars</li>
+                    <li class=" ">etc</li>
+                  </ul>
+                </p>
+
+
+                    </div>
+
+
+            </section>
 
             </div>
 
