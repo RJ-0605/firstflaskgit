@@ -1,11 +1,16 @@
 
-from flask import Flask, render_template,url_for
-from forms import RegistrationForm,LoginForm
+from flask import Flask, render_template,url_for,flash,redirect
+
 from flask_caching import Cache
 
+from forms import RegistrationForm,LoginForm
 
 
 app = Flask(__name__)
+
+
+
+
 
 
 cache = Cache(app,config={'CACHE_TYPE': 'simple', "DEBUG": True,})
@@ -39,8 +44,9 @@ posts = [
 
 
 @app.route('/')
+@app.route('/home')
 @cache.cached(timeout=6)
-def hello():
+def home():
 
 #	return ("<h1>Hello World</h1>
 	return render_template("index.html",post_variable=posts) 
@@ -53,10 +59,13 @@ def about():
 #	return ("<h1>Hello World</h1>
 	return render_template("about.html",title=about) 
 
-@app.route('/register')
+@app.route('/register',methods=["GET","POST"])
 @cache.cached(timeout=6)
 def register():
 	form=RegistrationForm()
+	if  form.validate_on_submit():
+		flash('Account created for !')
+		return redirect(url_for('home'))
 	return render_template('register.html',title='Register', form=form)
 
 

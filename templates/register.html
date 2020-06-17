@@ -15,24 +15,27 @@
                                         <legend>Personalia:</legend>
 
 
-						{{form.firstname.label(class="")}}
+						{{form.firstname.label}}
 							<br/>
-						{{form.firstname(class=" ")}}
+						{{form.firstname(size=32)}}
+						{% for error in form.firstname.errors %}
+        				    <span style="color: red;">[{{ error }}]</span>
+            			{% endfor %}
 
 						<br/><br/>
 
 
 
 
-						{{form.lastname.label(class="")}}
+						{{form.lastname.label}}
 							<br/>
-						{{form.lastname(class=" ")}}
+						{{form.lastname}}
 
 						<br/><br/>					
 
-						{{form.username.label(class="")}}
+						{{form.username.label}}
 							<br/>
-						{{form.username(class=" ")}}
+						{{form.username}}
 
 						<br/><br/>
 				
@@ -42,9 +45,9 @@
 
 
 						<!--the labels represent the variable name used for those fields in the  forms.py file -->
-						{{form.email.label(class=" ")}}
+						{{form.email.label}}
 							<br/>
-						{{form.email(class=" ")}}
+						{{form.email}}
 
 						<br/><br/>
 
@@ -52,18 +55,18 @@
 
 					
 
-						{{form.password.label(class="")}}
+						{{form.password.label}}
 							<br/>
-						{{form.password(class=" ")}}
+						{{form.password}}
 
 					 	<br/><br/>
 
 
 					
 
-						{{form.confirm_password.label(class=" ")}}
+						{{form.confirm_password.label}}
 							<br/>
-						{{form.confirm_password(class="")}}
+						{{form.confirm_password}}
 
 						<br/><br/>
 					
@@ -75,7 +78,7 @@
 				<br/><br/>
 
 				<div class="">
-					{{form.submit(class=" ")}}
+					{{form.submit()}}
 				</div>
 
 		    </form>

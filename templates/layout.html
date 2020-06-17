@@ -38,10 +38,10 @@
                        <li><a href ="/geckomod.html" class="main-ul-navleft main-ul-navleft-logo"  >GeckoBlog</a></li>
                       -->
                         
-                        <li><a class="active main-ul-navleft" href ="/geckomod.html" >Home</a></li>
-                        <li><a class="active main-ul-navleft" href="/About.html">About</a></li>
-                        <li><a class="active main-ul-navright" href="/Register.html">Register</a></li>
-                        <li><a class="active main-ul-navright" href="login.html">Login</a></li>
+                        <li><a class="active main-ul-navleft" href ="/home" >Home</a></li>
+                        <li><a class="active main-ul-navleft" href="/about">About</a></li>
+                        <li><a class="active main-ul-navright" href="/register">Register</a></li>
+                        <li><a class="active main-ul-navright" href="/login">Login</a></li>
                     </ul>
 
                 </nav>
@@ -59,6 +59,20 @@
                 <section>
 
                     <div class="articlesdiv firstdiv ">
+
+                        <!-- flash messages can come here-->
+                        {% with messages = get_flashed_messages()%}
+                        {% if messages  %}
+                            
+                            <ul>
+                            {% for message in messages %}
+                                <li>{{ message }}</li>
+                             {% endfor %}
+                            </ul>
+
+                            
+                        {% endif %}
+                        {%  endwith %}
 
                         {% block content %}{% endblock %}
 

@@ -116,12 +116,13 @@ header nav  a  {
 .wrap{
 
     border:solid green 2px;
-    width: 1150px; 
-    height:1500px;
+    width: 900px; 
+    height:1000px;
     margin:10px auto;
     background-color:transparent;
  /*this will be  the distance  of the top of the section to the .container wrapper */ 
     padding:5px ;
+    
     }
 
     .articlesdiv{
@@ -134,7 +135,7 @@ header nav  a  {
     
     .firstdiv{
     
-        width: 700px; 
+        width: 450px; 
         
         
         margin:10px 30px 60px 25px;
@@ -157,10 +158,10 @@ header nav  a  {
 
     .seconddiv{
 
-        width: 300px; 
+        width: 250px; 
         height:350px;
         
-        margin:10px 15px 60px 20px;
+        margin:10px 5px 20px 10px;
         
         background-color:whitesmoke;
      /*this will be  the distance  of the top of the section to the .container wrapper */ 
@@ -174,6 +175,7 @@ header nav  a  {
 
         list-style-type: none;
         margin-top:10px;
+        width: 150px;
     
     
     

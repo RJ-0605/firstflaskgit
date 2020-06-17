@@ -2,7 +2,7 @@
 
 hr.solid {
   border-top: 3px solid #bbb;
-  width:650px;
+  width:350px;
   margin:5px auto 15px auto;
 }
 
@@ -21,29 +21,33 @@ hr.solid {
 .mainlogindiv{
 
     border:solid green 2px;
-    width: 500px; 
+    width: 400px; 
     height:auto;
-    margin:10px auto;
+    margin:50px auto;
     padding:15px;
     background-color:whitesmoke;
 
 
 }
 
-.loginformclass{
 
-	border:solid green 2px;
-    width: 500px; 
-    height:550px;
-    margin:10px auto;
-    padding:15px;
-    background-color:whitesmoke;
-	
+.successfulval{
+
+  border:solid green 0.5px;
+    width: 30px; 
+    height:8px;
+    margin:0.5px auto;
+    padding:1px;
+    background-color:rgba(158, 252, 115, 0.5);
+    colour:rgba(10, 26, 3, 0.5);
 
 
 }
 
-
+.alert{
+  font-size: 5px;
+  font-weight:bold;
+}
 
 
 
